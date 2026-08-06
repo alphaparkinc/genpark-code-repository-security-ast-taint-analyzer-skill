@@ -1,0 +1,31 @@
+{
+  "name": "genpark-code-repository-security-ast-taint-analyzer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Static AST code analysis, taint propagation & zero-day vulnerability detector.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "ast-analyzer",
+    "security-audit",
+    "taint-analysis",
+    "code-vulnerabilities"
+  ],
+  "inputs": {
+    "repository_path": {
+      "type": "string"
+    },
+    "ruleset": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "vulnerabilities_found": {
+      "type": "array"
+    },
+    "overall_risk_score": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
